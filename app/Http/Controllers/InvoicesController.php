@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Invoices;
 use App\Http\Requests\StoreInvoicesRequest;
 use App\Http\Requests\UpdateInvoicesRequest;
+use App\Models\Invoices;
 
 class InvoicesController extends Controller
 {
@@ -15,7 +15,7 @@ class InvoicesController extends Controller
      */
     public function index()
     {
-        //
+        return view("invoices.invoices");
     }
 
     /**
