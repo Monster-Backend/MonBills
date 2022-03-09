@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@section("title", "قائمة الفواتير")
+
 @section('css')
 <!-- Internal Data table css -->
 <link href="{{URL::asset('assets/plugins/datatable/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" />
@@ -27,10 +29,9 @@
 						<div class="card mg-b-20">
 							<div class="card-header pb-0">
 								<div class="d-flex justify-content-between">
-									<h4 class="card-title mg-b-0">Bordered Table</h4>
-									<i class="mdi mdi-dots-horizontal text-gray"></i>
+									<a href="invoices/create" class="modal-effect btn btn-sm btn-primary" style="color:white"><i
+                                	class="fas fa-plus"></i>&nbsp; اضافة فاتورة</a>
 								</div>
-								<p class="tx-12 tx-gray-500 mb-2">Example of Valex Bordered Table.. <a href="">Learn more</a></p>
 							</div>
 							<div class="card-body">
 								<div class="table-responsive">

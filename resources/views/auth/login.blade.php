@@ -1,9 +1,8 @@
 @extends('layouts.master2')
 
-@section('title')
-تسجيل الدخول
-@stop
+@section("title", "تسجيل الدخول")
 
+@section('title', "تسجيل الدخول")
 
 @section('css')
 <!-- Sidemenu-respoansive-tabs css -->

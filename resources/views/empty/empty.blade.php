@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section("title", "test");
 @section('css')
 @endsection
 @section('page-header')
